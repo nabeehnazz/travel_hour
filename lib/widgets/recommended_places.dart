@@ -92,11 +92,11 @@ class _ListItem extends StatelessWidget {
             alignment: Alignment.topRight,
             child: Container(
               margin: EdgeInsets.only(top: 10, right: 15),
-              child: FlatButton.icon(
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(25)),
-                ),
-                color: Colors.grey[600].withOpacity(0.5),
+              child: TextButton.icon(
+                // shape: RoundedRectangleBorder(
+                //   borderRadius: BorderRadius.all(Radius.circular(25)),
+                // ),
+                // color: Colors.grey[600].withOpacity(0.5),
                 icon: Icon(
                   LineIcons.heart,
                   color: Colors.white,

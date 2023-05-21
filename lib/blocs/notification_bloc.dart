@@ -181,7 +181,7 @@ class NotificationBloc extends ChangeNotifier {
           subtitle: HtmlWidget(body),
         ),
         actions: <Widget>[
-          FlatButton(
+          ElevatedButton(
               child: Text('Ok'),
               onPressed: () {
                 Navigator.of(context).pop();

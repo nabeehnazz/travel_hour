@@ -31,7 +31,6 @@ void main()async {
       supportedLocales: [Locale('en'), Locale('es')],
       path: 'assets/translations',
       fallbackLocale: Locale('en'),
-      startLocale: Locale('en'),
       useOnlyLangCode: true,
       child: MyApp(),
     )
@@ -68,9 +67,9 @@ class _MyAppState extends State<MyApp> {
         ChangeNotifierProvider<AdsBloc>(create: (context) => AdsBloc()),
       ],
       child: MaterialApp(
-          supportedLocales: context.supportedLocales,
-          localizationsDelegates: context.localizationDelegates,
-          locale: context.locale,
+          //supportedLocales: context.,
+          //localizationsDelegates: context.localizationDelegates,
+         // locale: context.locale,
           theme: ThemeData(
               primarySwatch: Colors.blue,
               primaryColor: Colors.blueAccent,

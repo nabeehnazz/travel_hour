@@ -153,10 +153,10 @@ class _CommentsPageState extends State<CommentsPage> {
               Center(
                   child: Row(
                 children: <Widget>[
-                  FlatButton(
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(25)),
-                      color: Colors.redAccent,
+                  TextButton(
+                      // shape: RoundedRectangleBorder(
+                      //     borderRadius: BorderRadius.circular(25)),
+                      // color: Colors.redAccent,
                       child: Text(
                         'yes',
                         style: TextStyle(
@@ -186,10 +186,10 @@ class _CommentsPageState extends State<CommentsPage> {
                         }
                       }),
                   SizedBox(width: 10),
-                  FlatButton(
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(25)),
-                    color: Colors.deepPurpleAccent,
+                  TextButton(
+                    // shape: RoundedRectangleBorder(
+                    //     borderRadius: BorderRadius.circular(25)),
+                    // color: Colors.deepPurpleAccent,
                     child: Text(
                       'no',
                       style: TextStyle(

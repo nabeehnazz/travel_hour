@@ -12,14 +12,14 @@ openSignInDialog(context){
           title: Text('no sign in title').tr(),
           content: Text('no sign in subtitle').tr(),
           actions: [
-            FlatButton(
+            TextButton(
               onPressed: (){
                 Navigator.pop(context);
                 nextScreenPopup(context, SignInPage(tag: 'popup',));
               }, 
               child: Text('sign in').tr()),
 
-              FlatButton(
+            TextButton(
               onPressed: (){
                 
                 

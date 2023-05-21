@@ -197,7 +197,7 @@ class _SignInPageState extends State<SignInPage> {
         actions: [
           widget.tag != null
               ? Container()
-              : FlatButton(
+              : TextButton(
                   onPressed: () => handleSkip(),
                   child: Text('skip',
                       style: TextStyle(
@@ -273,11 +273,11 @@ class _SignInPageState extends State<SignInPage> {
                   Container(
                     height: 45,
                     width: MediaQuery.of(context).size.width * 0.80,
-                    child: FlatButton(
+                    child: TextButton(
                         onPressed: () => handleGoogleSignIn(),
-                        color: Colors.blueAccent,
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(5)),
+                        // color: Colors.blueAccent,
+                        // shape: RoundedRectangleBorder(
+                        //     borderRadius: BorderRadius.circular(5)),
                         child: googleSignInStarted == false
                             ? Row(
                                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -310,13 +310,13 @@ class _SignInPageState extends State<SignInPage> {
                   Container(
                     height: 45,
                     width: MediaQuery.of(context).size.width * 0.80,
-                    child: FlatButton(
+                    child: TextButton(
                         onPressed: () {
                           handleFacebookSignIn();
                         },
-                        color: Colors.indigo,
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(5)),
+                        // color: Colors.indigo,
+                        // shape: RoundedRectangleBorder(
+                        //     borderRadius: BorderRadius.circular(5)),
                         child: facebookSignInStarted == false
                             ? Row(
                                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -351,13 +351,13 @@ class _SignInPageState extends State<SignInPage> {
                       : Container(
                           height: 45,
                           width: MediaQuery.of(context).size.width * 0.80,
-                          child: FlatButton(
+                          child: TextButton(
                               onPressed: () {
                                 handleAppleSignIn();
                               },
-                              color: Colors.grey[900],
-                              shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(5)),
+                              // color: Colors.grey[900],
+                              // shape: RoundedRectangleBorder(
+                              //     borderRadius: BorderRadius.circular(5)),
                               child: appleSignInStarted == false
                                   ? Row(
                                       crossAxisAlignment:

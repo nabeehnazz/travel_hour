@@ -188,10 +188,10 @@ class _EditProfileState extends State<EditProfile> {
             Container(
               height: 45,
               width: MediaQuery.of(context).size.width,
-              child: RaisedButton(
-                
-                textColor: Colors.white,
-                color: Theme.of(context).primaryColor,
+              child: ElevatedButton(
+                //
+                // textColor: Colors.white,
+                // color: Theme.of(context).primaryColor,
                 child: loading == true 
                   ? Center(child: CircularProgressIndicator(backgroundColor: Colors.white,),)
                   : Text('update profile', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),).tr(),

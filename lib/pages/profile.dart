@@ -361,11 +361,11 @@ class UserUI extends StatelessWidget {
         return AlertDialog(
           title: Text('logout title').tr(),
           actions: [
-            FlatButton(
+            TextButton(
               child: Text('no').tr(),
               onPressed: ()=> Navigator.pop(context),
             ),
-            FlatButton(
+            TextButton(
               child: Text('yes').tr(),
               onPressed: ()async{
                 Navigator.pop(context);

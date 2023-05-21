@@ -177,9 +177,7 @@ class _BlogDetailsState extends State<BlogDetails> {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: <Widget>[
-                            FlatButton.icon(
-                              color: Colors.grey[200],
-                              padding: EdgeInsets.all(0),
+                            FilledButton.tonalIcon(
                               onPressed: () => handleSource(d.sourceUrl),
                               icon: Icon(Feather.external_link,
                                   size: 20, color: Colors.blueAccent),
@@ -245,8 +243,7 @@ class _BlogDetailsState extends State<BlogDetails> {
                         SizedBox(
                           width: 15,
                         ),
-                        FlatButton.icon(
-                            color: Colors.green[300],
+                        FilledButton.icon(
                             onPressed: () {
                               nextScreen(
                                   context, CommentsPage(collectionName: collectionName, timestamp: d.timestamp));

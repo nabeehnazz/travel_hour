@@ -51,9 +51,9 @@ class _IntroPageState extends State<IntroPage> {
                 color: Theme.of(context).primaryColor,
                 borderRadius: BorderRadius.circular(25),
                 ),
-            child: FlatButton(
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(25)),
+            child: TextButton(
+              // shape: RoundedRectangleBorder(
+              //     borderRadius: BorderRadius.circular(25)),
               child: Text(
                 'get started',
                 style: TextStyle(

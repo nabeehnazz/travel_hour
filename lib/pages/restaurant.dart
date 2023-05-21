@@ -40,7 +40,7 @@ class _RestaurantPageState extends State<RestaurantPage> {
         content: Text("we didn't find any nearby restaurants in this area").tr(),
         title: Text('no restaurants found', style: TextStyle(fontWeight: FontWeight.w700),).tr(),
         actions: <Widget>[
-          FlatButton(
+          TextButton(
             onPressed: (){
               Navigator.pop(context);
               Navigator.pop(context);
@@ -380,7 +380,7 @@ class _RestaurantPageState extends State<RestaurantPage> {
                   Container(
                     alignment: Alignment.bottomRight,
                     height: 50,
-                    child: FlatButton(
+                    child: TextButton(
                       child: Text('Close'),
                       onPressed: () {
                         Navigator.pop(context);
